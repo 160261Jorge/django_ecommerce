@@ -13,7 +13,7 @@ def about_page(request):
         "title": "pagina sobre",
         "content": "Bem-vindo a pagina sobre"
     }
-    return render(request, "about_page.html", context)
+    return render(request, "about/view.html", context)
 
 
 def contact_page(request):
@@ -21,4 +21,4 @@ def contact_page(request):
         "title": "pagina de contato",
         "content": "Bem-vindo a pagina de contato"
     }
-    return render(request, "contact_page.html", context)
+    return render(request, "contact/view.html", context)
